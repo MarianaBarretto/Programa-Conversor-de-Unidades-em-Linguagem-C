@@ -63,27 +63,27 @@ int main(){
         switch (opcao) {
             case 1:
                 resultado = celsiusFahrenheit(valor);
-                printf("%.2f Celsius equivale a %.2f Fahrenheit\n", valor, resultado);
+                printf("%.2f Celsius equivale a %.1f Fahrenheit\n", valor, resultado);
                 break;
             case 2:
                 resultado = celsiusKelvin(valor);
-                printf("%.2f Celsius equivale a %.2f Kelvin\n", valor, resultado);
+                printf("%.2f Celsius equivale a %.1f Kelvin\n", valor, resultado);
                 break;
             case 3: 
                 resultado = fahrenheitCelsius(valor);
-                printf("%.2f Fahrenheit equivale a %.2f Celsius\n", valor, resultado);
+                printf("%.2f Fahrenheit equivale a %.1f Celsius\n", valor, resultado);
                 break;
             case 4: 
                 resultado = fahrenheitKelvin(valor);
-                printf("%.2f Fahrenheit equivale a %.2f Kelvin\n", valor, resultado);
+                printf("%.2f Fahrenheit equivale a %.1f Kelvin\n", valor, resultado);
                 break;
             case 5: 
                 resultado = kelvinCelsius(valor);
-                printf("%.2f Kelvin equivale a %.2f Celsius\n", valor, resultado);
+                printf("%.2f Kelvin equivale a %.1f Celsius\n", valor, resultado);
                 break;
             case 6: 
                 resultado = kelvinFahrenheit(valor);
-                printf("%.2f Kelvin equivale a %.2f Fahrenheit\n", valor, resultado);
+                printf("%.2f Kelvin equivale a %.1f Fahrenheit\n", valor, resultado);
                 break;        
             default:
                 printf("Opção inválida! Tente novamente.\n");
