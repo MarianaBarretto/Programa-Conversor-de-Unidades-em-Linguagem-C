@@ -27,6 +27,31 @@ float kelvinFahrenheit(float kelvin) {
     return (kelvin - 273.15) * 9.0 / 5.0 + 32; 
 }
 
+//Funções de conversão de potência
+float watts_para_kilowatts (float watts) {
+    return watts/1000.0;
+}
+
+float watts_para_cavalo_vapor (float watts) {
+    return watts/735.49875;
+}
+
+float kilowatts_para_watts (float kilowatts) {
+    return kilowatts*1000.0;
+}
+
+float kilowatts_para_cavalo_vapor (float kilowatts) {
+    return kilowatts*1000.0/735.49875;
+}
+
+float cavalo_vapor_para_watts (float cv) {
+    return cv*735.49875;
+}
+
+float cavalo_vapor_para_kilowatts (float cv) {
+    return cv*735.49875/1000.0;
+}
+
 // Funções de conversão de tempo
 float segundos_para_minutos(float segundos) {
     return segundos / 60;
