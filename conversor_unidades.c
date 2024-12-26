@@ -453,6 +453,66 @@ int main() {
                 break; // Adicionado para evitar o fall-through
             }
 
+            case 1: { // Conversão de Unidade de Comprimento...
+
+                float valorr, resultado;
+    int opcao_origem, opcao_destino;
+
+    printf("Selecione a unidade de origem:\n");
+    printf("1 - Metro\n");
+    printf("2 - Centimetro\n");
+    printf("3 - Milimetro\n");
+    printf("Digite a opção: ");
+    scanf("%d", &opcao_origem);
+
+    printf("Digite o valor a ser convertido: ");
+    scanf("%f", &valorr);
+
+    printf("Selecione a unidade de destino:\n");
+    printf("1 - Metro\n");
+    printf("2 - Centimetro\n");
+    printf("3 - Milimetro\n");
+    printf("Digite a opção: ");
+    scanf("%d", &opcao_destino);
+
+    if (opcao_origem == 1) {
+        // Origem em Metro
+        if (opcao_destino == 1) {
+            resultado = valorr;
+        } else if (opcao_destino == 2) {
+            resultado = valorr * 100;
+        } else if (opcao_destino == 3) {
+            resultado = valorr * 1000;
+        }
+    } else if (opcao_origem == 2) {
+        // Origem em Centimetro
+        if (opcao_destino == 1) {
+            resultado = valorr / 100;
+        } else if (opcao_destino == 2) {
+            resultado = valorr;
+        } else if (opcao_destino == 3) {
+            resultado = valorr * 10;
+        }
+    } else if (opcao_origem == 3) {
+        // Origem em Milimetro
+        if (opcao_destino == 1) {
+            resultado = valorr / 1000;
+        } else if (opcao_destino == 2) {
+            resultado = valorr / 10;
+        } else if (opcao_destino == 3) {
+            resultado = valorr;
+        }
+    }
+
+    printf("Resultado: %.2f\n", resultado);
+
+    return 0;
+
+    // Realizando as conversões dependendo da unidade escolhida
+                testar_menu_unidade_comprimento(opcao_origem, opcao_destino, valorr, resultado);
+                break;
+            }
+
             case 4: { // Conversão de temperatura
                 int unidade_temperatura;
                 float valor;
