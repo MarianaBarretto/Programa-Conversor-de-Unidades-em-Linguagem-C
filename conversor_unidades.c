@@ -453,6 +453,77 @@ int main() {
                 break; // Adicionado para evitar o fall-through
             }
 
+            case 1: { // Conversão de Unidade de Comprimento...
+
+                float valor, resultado;
+    int opcao_origem, opcao_destino;
+
+    printf("Selecione a unidade de origem:\n");
+    printf("1 - Metro\n");
+    printf("2 - Centimetro\n");
+    printf("3 - Milimetro\n");
+    printf("Digite a opção: ");
+    scanf("%d", &opcao_origem);
+
+    // Verificar se a opção de origem é válida
+    if (opcao_origem < 1 || opcao_origem > 3) {
+        printf("Opção inválida para a unidade de origem.\n");
+        return 1; // Finaliza o programa
+    }
+
+    printf("Digite o valor a ser convertido: ");
+    scanf("%f", &valor);
+
+    printf("Selecione a unidade de destino:\n");
+    printf("1 - Metro\n");
+    printf("2 - Centimetro\n");
+    printf("3 - Milimetro\n");
+    printf("Digite a opção: ");
+    scanf("%d", &opcao_destino);
+
+    // Verificar se a opção de destino é válida
+    if (opcao_destino < 1 || opcao_destino > 3) {
+        printf("Opção inválida para a unidade de destino.\n");
+        return 1; // Finaliza o programa
+    }
+
+    // Realizando as conversões dependendo da unidade escolhida
+    if (opcao_origem == 1) {
+        // Origem em Metro
+        if (opcao_destino == 1) {
+            resultado = valor; // Metro para Metro
+        } else if (opcao_destino == 2) {
+            resultado = valor * 100; // Metro para Centimetro
+        } else if (opcao_destino == 3) {
+            resultado = valor * 1000; // Metro para Milimetro
+        }
+    } else if (opcao_origem == 2) {
+        // Origem em Centimetro
+        if (opcao_destino == 1) {
+            resultado = valor / 100; // Centimetro para Metro
+        } else if (opcao_destino == 2) {
+            resultado = valor; // Centimetro para Centimetro
+        } else if (opcao_destino == 3) {
+            resultado = valor * 10; // Centimetro para Milimetro
+        }
+    } else if (opcao_origem == 3) {
+        // Origem em Milimetro
+        if (opcao_destino == 1) {
+            resultado = valor / 1000; // Milimetro para Metro
+        } else if (opcao_destino == 2) {
+            resultado = valor / 10; // Milimetro para Centimetro
+        } else if (opcao_destino == 3) {
+            resultado = valor; // Milimetro para Milimetro
+        }
+    }
+
+    printf("Resultado: %.2f\n", resultado);
+
+    break;
+}
+
+    // Realizando as conversões dependendo da unidade escolhida
+              
             case 4: { // Conversão de temperatura
                 int unidade_temperatura;
                 float valor;
