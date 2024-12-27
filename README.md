@@ -68,15 +68,34 @@
 
 <h3>2. Funções de Conversão</h3>
 
+<h4>2.3. Funções de Conversão de Volume</h4>
+<p>As funções abaixo são responsáveis por realizar as conversões entre diferentes unidades de Volume:</p>
+<ul>
+    <li><strong>Coverter_Litros</strong>: Converte Litros para mililitros (valor em litros multiplicado por 1000) ou metros cubicos (valor em litros dividido por 1000).</li>
+    <li><strong>Converter_Metros_Cubicos</strong>: Converte metros cubicos para militros (valor em metros cubicos multiplicado por 1000000) ou litros (valor em metros cubicos multiplicado por 1000).</li>
+    <li><strong>Converter_Mililitros</strong>: Converte militros para litros ( valor em mililitros dividido por 1000) ou metro cubicos (valor em mililitros dividido por 1000000).</li>
+</ul>
+
 <h4>2.4. Funções de Conversão de Temperatura</h4>
 <p>As funções abaixo são responsáveis por realizar as conversões entre diferentes unidades de temperatura:</p>
 <ul>
-    <li><strong>celsius_para_fahrenheit</strong>: Converte Celsius para Fahrenheit, utilizando a fórmula \( F = (C \times 9/5) + 32 \).</li>
-    <li><strong>celsius_para_kelvin</strong>: Converte Celsius para Kelvin, somando 273.15 ao valor de Celsius.</li>
-    <li><strong>fahrenheit_para_celsius</strong>: Converte Fahrenheit para Celsius, utilizando a fórmula \( C = (F - 32) \times 5/9 \).</li>
-    <li><strong>fahrenheit_para_kelvin</strong>: Converte Fahrenheit para Kelvin, utilizando a fórmula \( K = (F - 32) \times 5/9 + 273.15 \).</li>
-    <li><strong>kelvin_para_celsius</strong>: Converte Kelvin para Celsius, subtraindo 273.15 do valor de Kelvin.</li>
-    <li><strong>kelvin_para_fahrenheit</strong>: Converte Kelvin para Fahrenheit, utilizando a fórmula \( F = (K - 273.15) \times 9/5 + 32 \).</li>
+    <li><strong>celsiusFahrenheit</strong>: Converte Celsius para Fahrenheit, utilizando a fórmula \( F = (C \times 9/5) + 32 \).</li>
+    <li><strong>celsiusKelvin</strong>: Converte Celsius para Kelvin, somando 273.15 ao valor de Celsius.</li>
+    <li><strong>fahrenheitCelsius</strong>: Converte Fahrenheit para Celsius, utilizando a fórmula \( C = (F - 32) \times 5/9 \).</li>
+    <li><strong>fahrenheitKelvin</strong>: Converte Fahrenheit para Kelvin, utilizando a fórmula \( K = (F - 32) \times 5/9 + 273.15 \).</li>
+    <li><strong>kelvinCelsius</strong>: Converte Kelvin para Celsius, subtraindo 273.15 do valor de Kelvin.</li>
+    <li><strong>kelvinFahrenheit</strong>: Converte Kelvin para Fahrenheit, utilizando a fórmula \( F = (K - 273.15) \times 9/5 + 32 \).</li>
+</ul>
+
+<h4>2.5. Funções de Conversão de Velocidade</h4>
+<p>As funções abaixo são responsáveis por realizar as conversões entre diferentes unidades de velocidade:</p>
+<ul>
+    <li><strong>kmParaMs</strong>: Converte km/h para m/s, multiplicando o valor por 0.277778.</li>
+    <li><strong>kmParaMph</strong>: Converte km/h para mph, multiplicando o valor por 0.62137.</li>
+    <li><strong>msParaKm</strong>: Converte m/s para km/h, multiplicando o valor por 3.6.</li>
+    <li><strong>msParaMph</strong>: Converte m/s para mph, multiplicando o valor por 2.23694.</li>
+    <li><strong>mphParaKm</strong>: Converte mph para km/h, multiplicando o valor por 1.60934.</li>
+    <li><strong>mphParaMs</strong>: Converte mph para m/s, multiplicando o valor por 0.44704.</li>
 </ul>
 
 <h4>2.6. Funções de Conversão de Potência</h4>
