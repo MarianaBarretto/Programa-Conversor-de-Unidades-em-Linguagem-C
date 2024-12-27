@@ -487,44 +487,43 @@ int main() {
         return 1; // Finaliza o programa
     }
 
+    // Realizando as conversões dependendo da unidade escolhida
     if (opcao_origem == 1) {
         // Origem em Metro
         if (opcao_destino == 1) {
-            resultado = valor;
+            resultado = valor; // Metro para Metro
         } else if (opcao_destino == 2) {
-            resultado = valor * 100;
+            resultado = valor * 100; // Metro para Centimetro
         } else if (opcao_destino == 3) {
-            resultado = valor * 1000;
+            resultado = valor * 1000; // Metro para Milimetro
         }
     } else if (opcao_origem == 2) {
         // Origem em Centimetro
         if (opcao_destino == 1) {
-            resultado = valor / 100;
+            resultado = valor / 100; // Centimetro para Metro
         } else if (opcao_destino == 2) {
-            resultado = valor;
+            resultado = valor; // Centimetro para Centimetro
         } else if (opcao_destino == 3) {
-            resultado = valor * 10;
+            resultado = valor * 10; // Centimetro para Milimetro
         }
     } else if (opcao_origem == 3) {
         // Origem em Milimetro
         if (opcao_destino == 1) {
-            resultado = valor / 1000;
+            resultado = valor / 1000; // Milimetro para Metro
         } else if (opcao_destino == 2) {
-            resultado = valor / 10;
+            resultado = valor / 10; // Milimetro para Centimetro
         } else if (opcao_destino == 3) {
-            resultado = valor;
+            resultado = valor; // Milimetro para Milimetro
         }
     }
 
     printf("Resultado: %.2f\n", resultado);
 
-    return 0;
+    break;
+}
 
     // Realizando as conversões dependendo da unidade escolhida
-                testar_menu_unidade_comprimento(opcao_origem, opcao_destino, valor, resultado);
-                break;
-            }
-
+              
             case 4: { // Conversão de temperatura
                 int unidade_temperatura;
                 float valor;
