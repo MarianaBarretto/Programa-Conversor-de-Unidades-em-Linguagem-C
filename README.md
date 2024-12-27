@@ -68,6 +68,14 @@
 
 <h3>2. Funções de Conversão</h3>
 
+<h4>2.3. Funções de Conversão de Volume</h4>
+<p>As funções abaixo são responsáveis por realizar as conversões entre diferentes unidades de Volume:</p>
+<ul>
+    <li><strong>Coverter_Litros</strong>: Converte Litros para mililitros (valor em litros multiplicado por 1000) ou metros cubicos (valor em litros dividido por 1000).</li>
+    <li><strong>Converter_Metros_Cubicos</strong>: Converte metros cubicos para militros (valor em metros cubicos multiplicado por 1000000) ou litros (valor em metros cubicos multiplicado por 1000).</li>
+    <li><strong>Converter_Mililitros</strong>: Converte militros para litros ( valor em mililitros dividido por 1000) ou metro cubicos (valor em mililitros dividido por 1000000).</li>
+</ul>
+
 <h4>2.4. Funções de Conversão de Temperatura</h4>
 <p>As funções abaixo são responsáveis por realizar as conversões entre diferentes unidades de temperatura:</p>
 <ul>
