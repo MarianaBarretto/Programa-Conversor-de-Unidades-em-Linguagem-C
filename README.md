@@ -79,12 +79,12 @@
 <h4>2.4. Funções de Conversão de Temperatura</h4>
 <p>As funções abaixo são responsáveis por realizar as conversões entre diferentes unidades de temperatura:</p>
 <ul>
-    <li><strong>celsius_para_fahrenheit</strong>: Converte Celsius para Fahrenheit, utilizando a fórmula \( F = (C \times 9/5) + 32 \).</li>
-    <li><strong>celsius_para_kelvin</strong>: Converte Celsius para Kelvin, somando 273.15 ao valor de Celsius.</li>
-    <li><strong>fahrenheit_para_celsius</strong>: Converte Fahrenheit para Celsius, utilizando a fórmula \( C = (F - 32) \times 5/9 \).</li>
-    <li><strong>fahrenheit_para_kelvin</strong>: Converte Fahrenheit para Kelvin, utilizando a fórmula \( K = (F - 32) \times 5/9 + 273.15 \).</li>
-    <li><strong>kelvin_para_celsius</strong>: Converte Kelvin para Celsius, subtraindo 273.15 do valor de Kelvin.</li>
-    <li><strong>kelvin_para_fahrenheit</strong>: Converte Kelvin para Fahrenheit, utilizando a fórmula \( F = (K - 273.15) \times 9/5 + 32 \).</li>
+    <li><strong>celsiusFahrenheit</strong>: Converte Celsius para Fahrenheit, utilizando a fórmula \( F = (C \times 9/5) + 32 \).</li>
+    <li><strong>celsiusKelvin</strong>: Converte Celsius para Kelvin, somando 273.15 ao valor de Celsius.</li>
+    <li><strong>fahrenheitCelsius</strong>: Converte Fahrenheit para Celsius, utilizando a fórmula \( C = (F - 32) \times 5/9 \).</li>
+    <li><strong>fahrenheitKelvin</strong>: Converte Fahrenheit para Kelvin, utilizando a fórmula \( K = (F - 32) \times 5/9 + 273.15 \).</li>
+    <li><strong>kelvinCelsius</strong>: Converte Kelvin para Celsius, subtraindo 273.15 do valor de Kelvin.</li>
+    <li><strong>kelvinFahrenheit</strong>: Converte Kelvin para Fahrenheit, utilizando a fórmula \( F = (K - 273.15) \times 9/5 + 32 \).</li>
 </ul>
 
 <h4>2.5. Funções de Conversão de Velocidade</h4>
